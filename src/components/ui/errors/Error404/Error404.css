@@ -1,0 +1,7 @@
+.Error404 {
+  text-align: center;
+}
+
+.Error404 > svg {
+  max-width: 600px;
+}

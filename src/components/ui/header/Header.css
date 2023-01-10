@@ -1,0 +1,19 @@
+.Header {
+  align-items: center;
+  background-color: var(--black);
+  box-shadow: 0px -5px 20px black;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.Header > .site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 8px;
+}

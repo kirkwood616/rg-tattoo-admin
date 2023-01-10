@@ -1,0 +1,25 @@
+.AppointmentRequestById {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin: auto;
+  overflow-wrap: break-word;
+  padding-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.AppointmentRequestById a {
+  color: blue;
+}
+
+.AppointmentRequestById > button {
+  width: 95%;
+}
+
+@media only screen and (min-width: 600px) {
+  .AppointmentRequestById,
+  .AppointmentRequestById > button {
+    width: 575px;
+  }
+}

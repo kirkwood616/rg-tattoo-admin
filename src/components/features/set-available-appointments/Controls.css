@@ -1,0 +1,60 @@
+.Controls {
+  margin: 0.5rem auto;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+.all-times_container {
+  display: flex;
+  flex-direction: column;
+}
+.all-times_container > .go-button {
+  background-color: var(--black);
+  margin: 0.5rem;
+  transition: all 0.25s ease;
+}
+.all-times_container > .go-button:hover {
+  transition: all 0.25s ease;
+  transform: scale(1.05);
+}
+.all-times_container > .go-button:first-child {
+  border: 3px solid var(--blue);
+  color: var(--blue);
+}
+.all-times_container > .go-button:last-child {
+  border: 3px solid var(--red);
+  color: var(--red);
+}
+
+.add-time {
+  display: flex;
+  position: sticky;
+  top: 4rem;
+  width: 85%;
+  z-index: 1;
+}
+.add-time > button.go-button {
+  border: 3px solid var(--blue);
+  background: linear-gradient(180deg, var(--blue) 0%, var(--black) 100%);
+  background-size: 100% 150%;
+  margin: 0 0.5rem;
+  transition: all 0.25s ease;
+  width: 100%;
+}
+.add-time > button.go-button:hover {
+  background-size: 100% 200%;
+  transform: scale(1.05);
+  transition: all 0.25s ease;
+}
+
+@media only screen and (min-width: 600px) {
+  .all-times_container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .all-times_container > .go-button:first-child,
+  .all-times_container > .go-button:last-child {
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+.AppointmentRequests {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1rem;
+}
+
+.requests-list_container {
+  margin: auto;
+  width: 100%;
+}
+
+.requests-list_container > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.requests-list_container > a > section > div > p {
+  margin: 0.25rem;
+}
+
+@media only screen and (min-width: 601px) {
+  .requests-list_container {
+    width: 550px;
+  }
+}

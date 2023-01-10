@@ -1,0 +1,33 @@
+.LoadingDots {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.LoadingDots > .skull {
+  fill: var(--light-gray-1);
+  width: 3rem;
+  margin: 0.5rem;
+}
+.LoadingDots > .skull.first {
+  animation: skullAnimation 1s ease-in-out infinite alternate-reverse;
+}
+.LoadingDots > .skull.second {
+  animation: skullAnimation 1s ease-in-out 0.33s infinite alternate-reverse;
+}
+.LoadingDots > .skull.third {
+  animation: skullAnimation 1s ease-in-out 0.66s infinite alternate-reverse;
+}
+
+@keyframes skullAnimation {
+  0%,
+  100% {
+    opacity: 0.1;
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}

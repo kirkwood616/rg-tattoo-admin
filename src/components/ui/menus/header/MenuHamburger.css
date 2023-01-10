@@ -1,0 +1,12 @@
+.MenuHamburger {
+  height: 32px;
+}
+
+.MenuHamburger .icon {
+  fill: white;
+  transition: fill 0.5s ease;
+}
+
+.MenuHamburger .icon.active {
+  fill: var(--black);
+}

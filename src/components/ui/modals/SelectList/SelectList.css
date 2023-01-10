@@ -1,0 +1,31 @@
+.select_container {
+  border-radius: 0.5rem;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  width: 95%;
+}
+
+.select-option {
+  background: linear-gradient(180deg, var(--dark-gray-3) 0%, var(--black) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 125%;
+  border: 3px solid var(--light-gray-1);
+  border-radius: var(--button_radius);
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  padding: 1rem 0;
+  transition: all 0.2s ease;
+  width: 80%;
+}
+
+.select-option:hover {
+  background: linear-gradient(180deg, var(--white) 0%, var(--black) 100%);
+  background-size: 100% 200%;
+  border: 3px solid var(--white);
+  color: var(--black);
+  transform: scale(1.05);
+  transition: all 0.1s ease;
+}

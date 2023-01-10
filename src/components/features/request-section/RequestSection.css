@@ -1,0 +1,78 @@
+.RequestSection {
+  background: linear-gradient(22.5deg, var(--black), var(--dark-gray-1), var(--dark-gray-2), var(--dark-gray-3));
+  border-radius: 1.5rem;
+  border: 3px solid var(--dark-gray-3);
+  box-shadow: 0 3px 15px var(--black);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.RequestSection > .request-section_title {
+  background-color: var(--dark-gray-3);
+  box-shadow: 0 0px 15px var(--black);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+}
+
+.request-section_container {
+  margin: auto;
+  width: 95%;
+}
+.request-section_container-enter {
+  max-height: 0;
+  transition: all 1.5s;
+}
+.request-section_container-enter-active {
+  max-height: 10000px;
+  transition: all 1.5s;
+}
+.request-section_container-exit {
+  max-height: 1000px;
+  transition: all 0.25s;
+}
+.request-section_container-exit-active {
+  max-height: 0;
+  transition: all 0.25s;
+}
+
+.log_container {
+  border-radius: 1rem;
+  box-shadow: 0 5px 10px var(--light-gray-1);
+  margin: 1rem 0;
+  overflow: hidden;
+}
+.action_container {
+  border: 2px solid var(--green);
+}
+.note_container {
+  border: 2px solid var(--blue);
+}
+
+.action_title,
+.note_title {
+  box-shadow: 0 0 10px var(--black);
+  color: var(--white);
+  margin: auto;
+  padding: 0.5rem;
+  position: relative;
+}
+.action_title {
+  background-color: var(--green);
+}
+.note_title {
+  background-color: var(--blue);
+}
+.action_text,
+.note_text {
+  background-color: var(--light-gray-2);
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 601px) {
+  .request-section_container {
+    width: 85%;
+  }
+}

@@ -1,0 +1,14 @@
+.ReqActions {
+  margin: auto;
+  width: 90%;
+}
+
+.ReqActions > .go-button {
+  margin: 0.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .ReqActions {
+    width: 575px;
+  }
+}

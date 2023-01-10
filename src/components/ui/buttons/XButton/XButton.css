@@ -1,0 +1,31 @@
+.x_button {
+  background: var(--black);
+  border-radius: 3.5rem;
+  box-shadow: 0 0 0.35rem var(--black);
+  cursor: pointer;
+  overflow: visible;
+  position: absolute;
+  transition: all 0.25s ease;
+  width: 44px;
+}
+.x_button:hover {
+  transform: scale(1.1);
+  transition: all 0.25s ease;
+}
+.x_button:hover > g > circle {
+  fill: var(--red);
+  transition: all 0.25s ease;
+}
+.x_button:hover > g > path {
+  fill: var(--dark-gray-1);
+  transition: all 0.25s ease;
+}
+
+.x_button > g > circle {
+  fill: var(--white);
+  transition: all 0.25s ease;
+}
+.x_button > g > path {
+  fill: var(--red);
+  transition: all 0.25s ease;
+}

@@ -1,0 +1,100 @@
+.menu-container {
+  background-color: none;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 5rem;
+  width: 100vw;
+  z-index: 4;
+}
+
+.menu-container_hide {
+  height: auto;
+  z-index: 4;
+}
+
+.requests-menu {
+  background: linear-gradient(var(--black), var(--dark-gray-3)) 0;
+  border-radius: 2rem;
+  border: 3px solid var(--white);
+  box-shadow: 0 0 1rem black;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: bold;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+  transition: all 0.25s ease;
+  width: 95%;
+}
+
+.requests-menu-list.inactive {
+  background: linear-gradient(90deg, var(--black), var(--dark-gray-2), var(--black));
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+.requests-menu-list.active {
+  background: linear-gradient(90deg, var(--black), var(--dark-gray-2), var(--black));
+  font-weight: bold;
+  max-height: 1200px;
+  transition: all 0.25s ease;
+  width: 100%;
+}
+
+.requests-menu_title {
+  box-shadow: 0 -10px 1.25rem var(--white);
+  padding: 1rem;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.requests-menu-list a {
+  text-decoration: none;
+}
+
+.menu-link {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent 10%,
+    var(--dark-gray-3) 50%,
+    transparent 90%,
+    transparent 100%
+  );
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  border-image: linear-gradient(
+      90deg,
+      var(--black) 0%,
+      var(--dark-gray-1) 25%,
+      var(--white) 50%,
+      var(--dark-gray-1) 75%,
+      var(--black) 100%
+    )
+    90;
+  border-style: solid;
+  border-bottom: 1px;
+  color: var(--white);
+  display: block;
+  font-size: inherit;
+  font-weight: bold;
+  margin: auto;
+  padding: 1rem;
+  transition: all 0.25s ease;
+  width: 100%;
+}
+.menu-link:hover {
+  background-size: 100% 100%;
+  transition: all 0.25s ease;
+}
+
+@media only screen and (min-width: 600px) {
+  .requests-menu {
+    width: 600px;
+  }
+}

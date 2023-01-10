@@ -1,0 +1,31 @@
+.AddNote {
+  margin: 1rem auto;
+  transition: all 0.25s ease;
+  width: 90%;
+}
+
+.note-field {
+  color: var(--white);
+  width: 100%;
+}
+
+.note-field > p {
+  color: var(--light-gray-2);
+  font-style: italic;
+  margin: 1rem;
+}
+.AddNote > .go-button {
+  border: 3px solid var(--blue);
+  background: linear-gradient(0deg, var(--black) 0%, var(--blue) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 125%;
+  display: block;
+  margin: 0 auto 1rem auto;
+  transition: all 0.25s ease;
+  width: 90%;
+}
+.AddNote > .go-button:hover {
+  background-size: 100% 200%;
+  transform: scale(1.05);
+  transition: all 0.25s ease;
+}
